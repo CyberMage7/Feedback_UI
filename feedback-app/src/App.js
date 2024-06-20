@@ -9,7 +9,6 @@ import { FeedbackProvider } from "./context/FeedbackContext";
 import AboutPage from "./pages/AboutPage";
 
 export default function App() {
-
   return (
     <FeedbackProvider>
       <Router>
