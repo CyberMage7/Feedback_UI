@@ -7,6 +7,7 @@ import FeedbackData from "./data/FeedbackData";
 import FeedbackList from "./components/FeedbackList";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
+import { FeedbackProvider } from "./context/FeedbackContext";
 import AboutPage from "./pages/AboutPage";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
   };
 
   return (
+    <FeedbackProvider>
     <Router>
       <Header />
       <div className="container">
@@ -46,5 +48,6 @@ export default function App() {
         </Routes>
       </div>
     </Router>
+    </FeedbackProvider>
   );
 }
